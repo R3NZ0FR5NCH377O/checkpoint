@@ -103,6 +103,7 @@ li{
     color: blue;
 }
 footer{
+    font-family: Arial, Helvetica, sans-serif;
     background-color: burlywood;
     width: 100%;
     max-width: 100%;
@@ -111,25 +112,80 @@ footer{
     bottom: 0;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 #div_footer_suscribe{
-    border: 1px solid black;
+    
     display: flex;
     flex-direction: column;
     gap: .5rem;
     
 }
-#div_footer_suscribe_h3{
-    border: 1px solid black;
-}
+
 #div_footer_suscribe_input{
-    border: 1px solid black;
     display: flex;
     gap: 1rem;
+    align-items: center;
 }
-#div_footer_cohort{
-    border: 1px solid black;
+#div_footer_suscribe_input input{
+height: 3vh;
 }
-#div_footer_email{
-    border: 1px solid black;
+#div_footer_suscribe_input button{
+  border-radius: 30%;
+  width: 4vw;
+  height: 4vh;
+  background-color: white;
+}
+li{
+    margin-top: .5rem;
+}
+
+
+@media only screen and (max-width:769px){
+   header{
+    flex-direction: column;
+   }
+   #div_seccion{
+    flex-direction: column;
+    align-items: center;
+   }
+   article{
+    width: 50%;
+
+   }
+   article img{
+    width: 50%;
+
+   }
+   #div_seccion2{
+    flex-direction: column;
+    align-items: center;
+    
+   }
+   footer{
+    position: relative;
+    flex-direction: column;
+    height: 100%;
+
+   }
+   #div_footer_suscribe_input button{
+    width: 5rem;
+   }
+   table{
+    width: 100%;
+   }
+}
+@media only screen and (max-width:321px){
+    #div_footer_suscribe_input{
+        flex-direction: column;
+    }
+    article{
+        min-width: 90%;
+    }
+    article img{
+        min-width: 90%;
+    }
+    #div_footer_suscribe_h3{
+        width: 50%;
+    }
 }
