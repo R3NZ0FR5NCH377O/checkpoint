@@ -44,6 +44,7 @@ nav a{
 body{
     display: flex;
     flex-direction: column;
+    gap: 4%;
   width: 100%;
   max-width: 100%;
   height: 80vh;
@@ -58,7 +59,7 @@ article{
     border: 1px solid black;
     border-radius: 10%;
     width: 16vw;
-    height: 30vh;
+    height: 40vh;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -69,7 +70,7 @@ article{
 }
 article img{
     width: 10vw;
-    height: 20vh;
+    height: 30vh;
     object-fit: cover;
 }
 
@@ -92,6 +93,9 @@ table,tr,th,td{
     border-collapse: collapse;
     padding: 1%;
 }
+table{
+    height: 20vh;
+}
 th{
     background-color: burlywood;
 }
@@ -106,6 +110,26 @@ footer{
     position: fixed;
     bottom: 0;
     display: flex;
-    align-items: center;
+    justify-content: space-between;
+}
+#div_footer_suscribe{
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
     
+}
+#div_footer_suscribe_h3{
+    border: 1px solid black;
+}
+#div_footer_suscribe_input{
+    border: 1px solid black;
+    display: flex;
+    gap: 1rem;
+}
+#div_footer_cohort{
+    border: 1px solid black;
+}
+#div_footer_email{
+    border: 1px solid black;
 }
